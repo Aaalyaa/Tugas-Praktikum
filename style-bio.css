@@ -1,0 +1,164 @@
+/* Mengatur semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Tampilan dasar halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1D1915;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 0;
+}
+
+
+/* Container utama */
+.container {
+    background-color: #E7E8E7;
+    border-radius: 15px;
+    padding: 20px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    width: 80%;
+    max-width: 800px;
+}
+
+
+/* Bagian profil */
+.profile {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* Foto profil */
+.profile img {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-bottom: 15px;
+}
+
+
+/* Judul utama */
+h1 {
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+
+/* Nama */
+.profile h2 {
+    border-bottom: none;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    font-size: 1.5em;
+}
+
+
+/* Keterangan di bawah nama */
+.subtitle {
+    color: #666;
+    font-size: 1.1em;
+}
+
+
+/* Setiap section */
+.section {
+    margin-bottom: 25px;
+}
+
+
+/* Judul section */
+.section > h2 {
+    border-bottom: 2px solid #999292;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+
+    font-size: 1.6em;
+}
+
+
+/* Subjudul */
+h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+
+
+/* Paragraf */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+/* List */
+ul {
+    padding-left: 25px;
+    line-height: 1.8;
+}
+
+
+/* Link */
+a {
+    color: #256a8a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Efek ketika link disentuh mouse */
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    color: #666;
+}
+
+
+/* Tampilan pada layar kecil */
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    .profile h2 {
+        font-size: 1.3em;
+    }
+
+    h3,
+    p {
+        font-size: 1em;
+    }
+
+    .section > h2 {
+        font-size: 1.4em;
+    }
+}
